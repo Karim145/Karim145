@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+
+		<div class="container">
+			<div class="row">
+				<div id="" class="col-8 mx-auto weather">
+
+					<div class="weather-head">
+						<h1 id="location" class="text-center display-4"></h1>
+						<div class="row">
+
+							</div>
+
+						</div>
+
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+        <% if(weather !== null){ %>  //den kollar om det weather har värde
+          <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+      </fieldset>
+    </div>
+
+
+		<style>
+	body {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/56238e70e4b079b0ec755562/1457191384950-WM3B6ONIXNDU1QB9HCSI/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/20140602-Stockholm-Sweden-0150-1080.jpg?format=2500w);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	color: white;
+}
+
+
+.weather {
+	border:1px solid white;
+	margin-top: 10rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	color: white;
+}
+
+	</style>
+
+  </body>
+</html>
